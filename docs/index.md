@@ -1,0 +1,3 @@
+#Cake.VsCode Documentation
+
+Cake.VsCode is an Addin for [Cake](http://cakebuild.net/) which...
