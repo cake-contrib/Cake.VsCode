@@ -9,6 +9,8 @@ namespace Cake.VsCode
     /// </summary>
     public sealed class VscePackager : VsceTool<VscePackageSettings>
     {
+        private readonly ICakeEnvironment _environment;
+
         /// <summary>
         /// Initializes a new instance of the <see cref="VscePackager" /> class.
         /// </summary>
@@ -20,6 +22,7 @@ namespace Cake.VsCode
         public VscePackager(IFileSystem fileSystem, ICakeEnvironment environment, IProcessRunner processRunner, IGlobber globber, IVsceToolResolver resolver)
             : base(fileSystem, environment, processRunner, globber, resolver)
         {
+            _environment = environment;
         }
 
         /// <summary>
@@ -33,14 +36,32 @@ namespace Cake.VsCode
                 throw new ArgumentNullException("settings");
             }
 
-            Run(settings, GetArguments(), new ProcessSettings { WorkingDirectory = settings.WorkingDirectory }, null);
+            Run(settings, GetArguments(settings), new ProcessSettings { WorkingDirectory = settings.WorkingDirectory }, null);
         }
 
-        private ProcessArgumentBuilder GetArguments()
+        private ProcessArgumentBuilder GetArguments(VscePackageSettings settings)
         {
             var builder = new ProcessArgumentBuilder();
 
             builder.Append("package");
+
+            if (settings.OutputDirectory != null)
+            {
+                builder.Append("--out");
+                builder.AppendQuoted(settings.OutputDirectory.MakeAbsolute(_environment).FullPath);
+            }
+
+            if (settings.BaseContentUrl != null)
+            {
+                builder.Append("--baseContentUrl");
+                builder.AppendQuoted(settings.BaseContentUrl.ToString());
+            }
+
+            if (settings.BaseImagesUrl != null)
+            {
+                builder.Append("--baseImagesUrl");
+                builder.AppendQuoted(settings.BaseImagesUrl.ToString());
+            }
 
             return builder;
         }
