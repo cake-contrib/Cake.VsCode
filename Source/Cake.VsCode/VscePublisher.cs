@@ -50,6 +50,12 @@ namespace Cake.VsCode
                 builder.AppendQuoted(settings.Package.MakeAbsolute(_environment).FullPath);
             }
 
+            if (!string.IsNullOrWhiteSpace(settings.PersonalAccessToken))
+            {
+                builder.Append("--pat");
+                builder.Append(settings.PersonalAccessToken);
+            }
+
             return builder;
         }
     }
