@@ -45,10 +45,10 @@ namespace Cake.VsCode
 
             builder.Append("package");
 
-            if (settings.OutputDirectory != null)
+            if (settings.OutputFilePath != null)
             {
                 builder.Append("--out");
-                builder.AppendQuoted(settings.OutputDirectory.MakeAbsolute(_environment).FullPath);
+                builder.AppendQuoted(settings.OutputFilePath.MakeAbsolute(_environment).FullPath);
             }
 
             if (settings.BaseContentUrl != null)
