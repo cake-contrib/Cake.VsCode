@@ -10,9 +10,9 @@ using System;
 [assembly: AssemblyDescription("Cake VsCode AddIn")]
 [assembly: AssemblyCompany("gep13")]
 [assembly: AssemblyProduct("Cake.VsCode")]
-[assembly: AssemblyVersion("0.1.0")]
-[assembly: AssemblyFileVersion("0.1.0")]
-[assembly: AssemblyInformationalVersion("0.1.0")]
+[assembly: AssemblyVersion("0.2.0")]
+[assembly: AssemblyFileVersion("0.2.0")]
+[assembly: AssemblyInformationalVersion("0.2.0")]
 [assembly: AssemblyCopyright("Copyright © gep13 2016 - Present")]
 [assembly: CLSCompliant(true)]
 
