@@ -15,9 +15,9 @@ namespace Cake.VsCode
         public DirectoryPath WorkingDirectory { get; set; }
 
         /// <summary>
-        /// Gets or sets a value indicating the Output Directory that should be used when packaging is complete.
+        /// Gets or sets a value indicating the Output FilePath that should be used when packaging is complete.
         /// </summary>
-        public DirectoryPath OutputDirectory { get; set; }
+        public FilePath OutputFilePath { get; set; }
 
         /// <summary>
         /// Gets or sets a value indicating the Url which will be prepended to all relative links in README.md.
