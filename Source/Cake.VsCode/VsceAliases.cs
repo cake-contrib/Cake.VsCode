@@ -50,7 +50,7 @@ namespace Cake.VsCode
 
             var resolver = new VsceToolResolver(context.FileSystem, context.Environment);
             var packager = new VscePackager(context.FileSystem, context.Environment, context.ProcessRunner, context.Globber, resolver);
-            packager.Package(settings);
+            packager.Run(settings);
         }
 
         /// <summary>
@@ -93,7 +93,7 @@ namespace Cake.VsCode
 
             var resolver = new VsceToolResolver(context.FileSystem, context.Environment);
             var publisher = new VscePublisher(context.FileSystem, context.Environment, context.ProcessRunner, context.Globber, resolver);
-            publisher.Publish(settings);
+            publisher.Run(settings);
         }
     }
 }

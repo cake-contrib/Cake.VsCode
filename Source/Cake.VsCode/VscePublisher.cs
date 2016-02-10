@@ -29,7 +29,7 @@ namespace Cake.VsCode
         /// Publishes a Vsce package from the provided settings.
         /// </summary>
         /// <param name="settings">The settings.</param>
-        public void Publish(VscePublishSettings settings)
+        public void Run(VscePublishSettings settings)
         {
             if (settings == null)
             {
