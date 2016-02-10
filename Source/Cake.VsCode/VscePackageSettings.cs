@@ -1,5 +1,4 @@
-﻿using System;
-using Cake.Core.IO;
+﻿using Cake.Core.IO;
 using Cake.Core.Tooling;
 
 namespace Cake.VsCode
@@ -10,7 +9,7 @@ namespace Cake.VsCode
     public sealed class VscePackageSettings : ToolSettings
     {
         /// <summary>
-        /// Gets or sets a value indicating the Working Directory that should be used while running vsce.
+        /// Gets or sets a value indicating the Working Directory that should be used while running Vsce.
         /// </summary>
         public DirectoryPath WorkingDirectory { get; set; }
 
@@ -22,11 +21,11 @@ namespace Cake.VsCode
         /// <summary>
         /// Gets or sets a value indicating the Url which will be prepended to all relative links in README.md.
         /// </summary>
-        public Uri BaseContentUrl { get; set; }
+        public string BaseContentUrl { get; set; }
 
         /// <summary>
         /// Gets or sets a value indicating the Url which will be prepended to all relative image links in README.md.
         /// </summary>
-        public Uri BaseImagesUrl { get; set; }
+        public string BaseImagesUrl { get; set; }
     }
 }

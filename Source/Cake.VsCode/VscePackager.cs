@@ -54,13 +54,13 @@ namespace Cake.VsCode
             if (settings.BaseContentUrl != null)
             {
                 builder.Append("--baseContentUrl");
-                builder.AppendQuoted(settings.BaseContentUrl.ToString());
+                builder.AppendQuoted(settings.BaseContentUrl);
             }
 
             if (settings.BaseImagesUrl != null)
             {
                 builder.Append("--baseImagesUrl");
-                builder.AppendQuoted(settings.BaseImagesUrl.ToString());
+                builder.AppendQuoted(settings.BaseImagesUrl);
             }
 
             return builder;

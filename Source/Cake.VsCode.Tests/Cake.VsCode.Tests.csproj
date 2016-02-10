@@ -69,9 +69,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="VcsePublisherFixture.cs" />
+    <Compile Include="VscePublisherFixture.cs" />
     <Compile Include="VsceFixture.cs" />
     <Compile Include="VscePackagerFixture.cs" />
+    <Compile Include="VscePackagerTests.cs" />
+    <Compile Include="VscePublisherTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
