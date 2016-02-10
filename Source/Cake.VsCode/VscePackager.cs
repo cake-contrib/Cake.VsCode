@@ -29,7 +29,7 @@ namespace Cake.VsCode
         /// Creates a Vsce package from the provided settings.
         /// </summary>
         /// <param name="settings">The settings.</param>
-        public void Package(VscePackageSettings settings)
+        public void Run(VscePackageSettings settings)
         {
             if (settings == null)
             {
@@ -54,13 +54,13 @@ namespace Cake.VsCode
             if (settings.BaseContentUrl != null)
             {
                 builder.Append("--baseContentUrl");
-                builder.AppendQuoted(settings.BaseContentUrl.ToString());
+                builder.AppendQuoted(settings.BaseContentUrl);
             }
 
             if (settings.BaseImagesUrl != null)
             {
                 builder.Append("--baseImagesUrl");
-                builder.AppendQuoted(settings.BaseImagesUrl.ToString());
+                builder.AppendQuoted(settings.BaseImagesUrl);
             }
 
             return builder;
