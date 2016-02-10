@@ -19,8 +19,8 @@ var binDir              = Directory("./Source/Cake.VsCode/bin") + Directory(conf
 var objDir              = Directory("./Source/Cake.VsCode/obj") + Directory(configuration);
 var buildArtifacts      = Directory("./BuildArtifacts");
 var testResultsDir      = buildArtifacts + Directory("test-results");
-var version             = "0.2.0";
-var semVersion          = "0.2.0";
+var version             = "0.3.0";
+var semVersion          = "0.3.0";
 
 var assemblyInfo        = new AssemblyInfoSettings {
                                 Title                   = "Cake.VsCode",
