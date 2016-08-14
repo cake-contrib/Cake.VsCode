@@ -35,7 +35,7 @@ namespace Cake.VsCode
         /// <code>
         ///     VscePackage(new VscePackageSettings()
         ///     {
-        ///         WorkingDirectory = Directory("C:/vscodeextension")
+        ///         BaseImagesUrl = "http://mydomain.com")
         ///     });
         /// </code>
         /// </example>
@@ -49,7 +49,7 @@ namespace Cake.VsCode
             }
 
             var resolver = new VsceToolResolver(context.FileSystem, context.Environment);
-            var packager = new VscePackager(context.FileSystem, context.Environment, context.ProcessRunner, context.Globber, resolver);
+            var packager = new VscePackager(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools, resolver);
             packager.Run(settings);
         }
 
@@ -78,7 +78,7 @@ namespace Cake.VsCode
         /// <code>
         ///     VscePublish(new VscePublishSettings()
         ///     {
-        ///         WorkingDirectory = Directory("C:/vscodeextension")
+        ///         PersonalAccessToken = "ABCDEF")
         ///     });
         /// </code>
         /// </example>
@@ -92,7 +92,7 @@ namespace Cake.VsCode
             }
 
             var resolver = new VsceToolResolver(context.FileSystem, context.Environment);
-            var publisher = new VscePublisher(context.FileSystem, context.Environment, context.ProcessRunner, context.Globber, resolver);
+            var publisher = new VscePublisher(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools, resolver);
             publisher.Run(settings);
         }
     }

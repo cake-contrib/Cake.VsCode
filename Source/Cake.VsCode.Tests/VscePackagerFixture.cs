@@ -4,7 +4,7 @@
     {
         protected override void RunTool()
         {
-            var tool = new VscePackager(FileSystem, Environment, ProcessRunner, Globber, Resolver);
+            var tool = new VscePackager(FileSystem, Environment, ProcessRunner, Tools, Resolver);
             tool.Run(Settings);
         }
     }

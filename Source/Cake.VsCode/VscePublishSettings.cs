@@ -19,10 +19,5 @@ namespace Cake.VsCode
         /// </summary>
         /// <value>The Personal Access Token.</value>
         public string PersonalAccessToken { get; set; }
-
-        /// <summary>
-        /// Gets or sets a value indicating the Working Directory that should be used while running vsce.
-        /// </summary>
-        public DirectoryPath WorkingDirectory { get; set; }
     }
 }
