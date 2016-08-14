@@ -1,6 +1,7 @@
 ﻿using System;
 using Cake.Core;
 using Cake.Core.IO;
+using Cake.Core.Tooling;
 
 namespace Cake.VsCode
 {
@@ -17,10 +18,10 @@ namespace Cake.VsCode
         /// <param name="fileSystem">The file system.</param>
         /// <param name="environment">The environment.</param>
         /// <param name="processRunner">The process runner.</param>
-        /// <param name="globber">The globber.</param>
+        /// <param name="toolLocator">The tool locator.</param>
         /// <param name="resolver">The tool resolver</param>
-        public VscePackager(IFileSystem fileSystem, ICakeEnvironment environment, IProcessRunner processRunner, IGlobber globber, IVsceToolResolver resolver)
-            : base(fileSystem, environment, processRunner, globber, resolver)
+        public VscePackager(IFileSystem fileSystem, ICakeEnvironment environment, IProcessRunner processRunner, IToolLocator toolLocator, IVsceToolResolver resolver)
+            : base(fileSystem, environment, processRunner, toolLocator, resolver)
         {
             _environment = environment;
         }
@@ -36,7 +37,7 @@ namespace Cake.VsCode
                 throw new ArgumentNullException("settings");
             }
 
-            Run(settings, GetArguments(settings), new ProcessSettings { WorkingDirectory = settings.WorkingDirectory }, null);
+            Run(settings, GetArguments(settings));
         }
 
         private ProcessArgumentBuilder GetArguments(VscePackageSettings settings)

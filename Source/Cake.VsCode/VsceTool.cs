@@ -21,10 +21,10 @@ namespace Cake.VsCode
         /// <param name="fileSystem">The file system.</param>
         /// <param name="environment">The environment.</param>
         /// <param name="processRunner">The process runner.</param>
-        /// <param name="globber">The globber.</param>
+        /// <param name="toolLocator">The Tool Locator.</param>
         /// <param name="resolver">The Chocolatey tool resolver.</param>
-        protected VsceTool(IFileSystem fileSystem, ICakeEnvironment environment, IProcessRunner processRunner, IGlobber globber, IVsceToolResolver resolver)
-            : base(fileSystem, environment, processRunner, globber)
+        protected VsceTool(IFileSystem fileSystem, ICakeEnvironment environment, IProcessRunner processRunner, IToolLocator toolLocator, IVsceToolResolver resolver)
+            : base(fileSystem, environment, processRunner, toolLocator)
         {
             _resolver = resolver;
         }
