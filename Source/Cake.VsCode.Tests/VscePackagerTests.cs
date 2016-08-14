@@ -68,19 +68,6 @@ namespace Cake.VsCode.Tests
             }
 
             [Fact]
-            public void Should_Set_Working_Directory()
-            {
-                // Given
-                var fixture = new VscePackagerFixture();
-
-                // When
-                var result = fixture.Run();
-
-                // Then
-                Assert.Equal("/Working", result.Process.WorkingDirectory.FullPath);
-            }
-
-            [Fact]
             public void Should_Throw_If_Process_Was_Not_Started()
             {
                 // Given
@@ -107,7 +94,7 @@ namespace Cake.VsCode.Tests
 
                 // Then
                 Assert.IsType<CakeException>(result);
-                Assert.Equal("Vsce: Process returned an error.", result.Message);
+                Assert.Equal("Vsce: Process returned an error (exit code 1).", result.Message);
             }
 
             [Fact]

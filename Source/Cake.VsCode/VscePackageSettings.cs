@@ -9,11 +9,6 @@ namespace Cake.VsCode
     public sealed class VscePackageSettings : ToolSettings
     {
         /// <summary>
-        /// Gets or sets a value indicating the Working Directory that should be used while running Vsce.
-        /// </summary>
-        public DirectoryPath WorkingDirectory { get; set; }
-
-        /// <summary>
         /// Gets or sets a value indicating the Output FilePath that should be used when packaging is complete.
         /// </summary>
         public FilePath OutputFilePath { get; set; }
