@@ -184,7 +184,7 @@ if (!(Test-Path $CAKE_EXE)) {
 }
 
 # Make sure that re-usable build.cake file exists.
-Invoke-Expression "&`"$NUGET_EXE`" install gep13.DefaultBuild -ExcludeVersion -PreRelease -OutputDirectory `"$TOOLS_DIR`" -Source `"C:\github\gep13\ChocolateyPackages\gep13.DefaultBuild`""
+Invoke-Expression "&`"$NUGET_EXE`" install gep13.DefaultBuild -ExcludeVersion -PreRelease -OutputDirectory `"$TOOLS_DIR`" -Source `"https://www.myget.org/F/gep13/api/v3/index.json`""
 
 # Start Cake
 Write-Host "Running build script..."
