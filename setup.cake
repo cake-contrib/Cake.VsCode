@@ -36,7 +36,7 @@ var solutionFilePath          = "./Source/Cake.VsCode.sln";
 var solutionDirectoryPath     = "./Source/Cake.VsCode";
 var title                     = "Cake.VsCode";
 var resharperSettingsFileName = "Cake.VsCode.sln.DotSettings";
-var repositoryOwner           = "cake-build";
+var repositoryOwner           = "cake-contrib";
 var repositoryName            = "Cake.VsCode";
 
 // NOTE: Only populate this, if required, but leave as is otherwise.
