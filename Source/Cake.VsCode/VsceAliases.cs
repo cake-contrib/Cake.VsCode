@@ -5,7 +5,14 @@ using Cake.Core.Annotations;
 namespace Cake.VsCode
 {
     /// <summary>
-    /// Contains functionality for working with Vsce.
+    /// <para>Contains aliases related to <see href="https://code.visualstudio.com/docs/tools/vscecli">VSCode Extension Manager</see>.</para>
+    /// <para>
+    /// In order to use the commands for this addin, you will need to include the following in your build.cake file to download and
+    /// reference from NuGet.org:
+    /// <code>
+    /// #addin Cake.VsCode
+    /// </code>
+    /// </para>
     /// </summary>
     [CakeAliasCategory("Vsce")]
     public static class VsceAliases
