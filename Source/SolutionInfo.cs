@@ -8,11 +8,10 @@ using System;
 
 [assembly: AssemblyTitle("Cake.VsCode")]
 [assembly: AssemblyDescription("Cake VsCode AddIn")]
-[assembly: AssemblyCompany("gep13")]
+[assembly: AssemblyCompany("Cake Contributions")]
 [assembly: AssemblyProduct("Cake.VsCode")]
 [assembly: AssemblyVersion("0.3.0")]
 [assembly: AssemblyFileVersion("0.3.0")]
 [assembly: AssemblyInformationalVersion("0.3.0")]
-[assembly: AssemblyCopyright("Copyright © gep13 2016 - Present")]
+[assembly: AssemblyCopyright("Copyright © Cake Contributions 2016 - Present")]
 [assembly: CLSCompliant(true)]
-
