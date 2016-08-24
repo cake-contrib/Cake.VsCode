@@ -18,6 +18,8 @@ private static string twitterConsumerKeyVariable = "TWITTER_CONSUMER_KEY";
 private static string twitterConsumerSecretVariable = "TWITTER_CONSUMER_SECRET";
 private static string twitterAccessTokenVariable = "TWITTER_ACCESS_TOKEN";
 private static string twitterAccessTokenSecretVariable = "TWITTER_ACCESS_TOKEN_SECRET";
+private static string appVeyorApiTokenVariable = "APPVEYOR_API_TOKEN";
+private static string coverallsRepoTokenVariable = "COVERALLS_REPO_TOKEN";
 
 ///////////////////////////////////////////////////////////////////////////////
 // BUILD ACTIONS
@@ -38,6 +40,8 @@ var title                     = "Cake.VsCode";
 var resharperSettingsFileName = "Cake.VsCode.sln.DotSettings";
 var repositoryOwner           = "cake-contrib";
 var repositoryName            = "Cake.VsCode";
+var appVeyorAccountName       = "cakecontrib";
+var appVeyorProjectSlug       = "cake-vscode";
 
 // NOTE: Only populate this, if required, but leave as is otherwise.
 var dupFinderExcludePattern   = new string[] { rootDirectoryPath + "/Source/Cake.VsCode.Tests/*.cs" };
@@ -48,6 +52,7 @@ var dupFinderExcludePattern   = new string[] { rootDirectoryPath + "/Source/Cake
 
 #l .\Tools\gep13.DefaultBuild\Content\appveyor.cake
 #l .\Tools\gep13.DefaultBuild\Content\chocolatey.cake
+#l .\Tools\gep13.DefaultBuild\Content\coveralls.cake
 #l .\Tools\gep13.DefaultBuild\Content\credentials.cake
 #l .\Tools\gep13.DefaultBuild\Content\gitreleasemanager.cake
 #l .\Tools\gep13.DefaultBuild\Content\gitter.cake
