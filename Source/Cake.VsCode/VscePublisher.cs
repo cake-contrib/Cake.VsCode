@@ -48,13 +48,14 @@ namespace Cake.VsCode
 
             if (settings.Package != null)
             {
+                builder.Append("--packagePath");
                 builder.AppendQuoted(settings.Package.MakeAbsolute(_environment).FullPath);
             }
 
             if (!string.IsNullOrWhiteSpace(settings.PersonalAccessToken))
             {
                 builder.Append("--pat");
-                builder.Append(settings.PersonalAccessToken);
+                builder.AppendSecret(settings.PersonalAccessToken);
             }
 
             return builder;

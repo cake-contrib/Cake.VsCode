@@ -18,6 +18,10 @@ Cake Addin that extends Cake with ability to execute vsce command line utility
 |:--:|:--:|
 |[![Build status](https://ci.appveyor.com/api/projects/status/1ib78ss5ta2oejwi/branch/develop?svg=true)](https://ci.appveyor.com/project/cakecontrib/cake-vscode/branch/develop)|[![Build status](https://ci.appveyor.com/api/projects/status/1ib78ss5ta2oejwi/branch/master?svg=true)](https://ci.appveyor.com/project/cakecontrib/cake-vscode/branch/master)|
 
+## Code Coverage
+
+[![Coverage Status](https://coveralls.io/repos/github/cake-contrib/Cake.VsCode/badge.svg?branch=develop)](https://coveralls.io/github/cake-contrib/Cake.VsCode?branch=develop)
+
 ## Quick Links
 
 - [Documentation](http://cakevscode.readthedocs.io/en/develop/)
