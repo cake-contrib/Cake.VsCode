@@ -55,7 +55,7 @@ namespace Cake.VsCode
             if (!string.IsNullOrWhiteSpace(settings.PersonalAccessToken))
             {
                 builder.Append("--pat");
-                builder.Append(settings.PersonalAccessToken);
+                builder.AppendSecret(settings.PersonalAccessToken);
             }
 
             return builder;
