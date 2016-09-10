@@ -48,6 +48,7 @@ namespace Cake.VsCode
 
             if (settings.Package != null)
             {
+                builder.Append("--packagePath");
                 builder.AppendQuoted(settings.Package.MakeAbsolute(_environment).FullPath);
             }
 
