@@ -107,7 +107,7 @@ namespace Cake.VsCode.Tests
                 var result = fixture.Run();
 
                 // Then
-                Assert.Equal("publish \"C:/temp/package.vsix\"", result.Args);
+                Assert.Equal("publish --packagePath \"C:/temp/package.vsix\"", result.Args);
             }
 
             [Fact]
