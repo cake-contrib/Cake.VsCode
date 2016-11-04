@@ -10,12 +10,12 @@
     <licenseUrl>https://github.com/cake-contrib/Cake.VsCode/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/cake-contrib/Cake.VsCode/</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <copyright>Copyright (c) gep13</copyright>
+    <copyright>Copyright (c) Cake Contributions 2016 - Present</copyright>
     <tags>Cake, Script, Build, VsCode</tags>
   </metadata>
   <files>
-    <file src="Cake.VsCode.dll" />
-    <file src="Cake.VsCode.pdb" />
-    <file src="Cake.VsCode.xml" />
+    <file src="Cake.VsCode.dll" target="lib\net45" />
+    <file src="Cake.VsCode.pdb" target="lib\net45" />
+    <file src="Cake.VsCode.xml" target="lib\net45" />
   </files>
 </package>
