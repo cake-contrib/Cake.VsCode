@@ -34,46 +34,6 @@ var searchModule = function() {
 
     a({
         id:0,
-        title:"VscePublisher",
-        content:"VscePublisher",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:1,
-        title:"VscePackager",
-        content:"VscePackager",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:2,
-        title:"VsceAliases",
-        content:"VsceAliases",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:3,
-        title:"VscePackageSettings",
-        content:"VscePackageSettings",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:4,
-        title:"IVsceToolResolver",
-        content:"IVsceToolResolver",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:5,
         title:"VscePublishSettings",
         content:"VscePublishSettings",
         description:'',
@@ -81,24 +41,70 @@ var searchModule = function() {
     });
 
     a({
-        id:6,
-        title:"VsceToolResolver",
-        content:"VsceToolResolver",
+        id:1,
+        title:"IVsceToolResolver",
+        content:"IVsceToolResolver",
         description:'',
         tags:''
     });
 
     a({
-        id:7,
+        id:2,
+        title:"VscePackager",
+        content:"VscePackager",
+        description:'',
+        tags:''
+    });
+
+    a({
+        id:3,
+        title:"VsceAliases",
+        content:"VsceAliases",
+        description:'',
+        tags:''
+    });
+
+    a({
+        id:4,
+        title:"VscePublisher",
+        content:"VscePublisher",
+        description:'',
+        tags:''
+    });
+
+    a({
+        id:5,
+        title:"VscePackageSettings",
+        content:"VscePackageSettings",
+        description:'',
+        tags:''
+    });
+
+    a({
+        id:6,
         title:"VsceTool",
         content:"VsceTool",
         description:'',
         tags:''
     });
 
+    a({
+        id:7,
+        title:"VsceToolResolver",
+        content:"VsceToolResolver",
+        description:'',
+        tags:''
+    });
+
     y({
-        url:'/Cake.VsCode/Cake.VsCode/api/Cake.VsCode/VscePublisher',
-        title:"VscePublisher",
+        url:'/Cake.VsCode/Cake.VsCode/api/Cake.VsCode/VscePublishSettings',
+        title:"VscePublishSettings",
+        description:""
+    });
+
+    y({
+        url:'/Cake.VsCode/Cake.VsCode/api/Cake.VsCode/IVsceToolResolver',
+        title:"IVsceToolResolver",
         description:""
     });
 
@@ -115,32 +121,26 @@ var searchModule = function() {
     });
 
     y({
+        url:'/Cake.VsCode/Cake.VsCode/api/Cake.VsCode/VscePublisher',
+        title:"VscePublisher",
+        description:""
+    });
+
+    y({
         url:'/Cake.VsCode/Cake.VsCode/api/Cake.VsCode/VscePackageSettings',
         title:"VscePackageSettings",
         description:""
     });
 
     y({
-        url:'/Cake.VsCode/Cake.VsCode/api/Cake.VsCode/IVsceToolResolver',
-        title:"IVsceToolResolver",
-        description:""
-    });
-
-    y({
-        url:'/Cake.VsCode/Cake.VsCode/api/Cake.VsCode/VscePublishSettings',
-        title:"VscePublishSettings",
+        url:'/Cake.VsCode/Cake.VsCode/api/Cake.VsCode/VsceTool_1',
+        title:"VsceTool<TSettings>",
         description:""
     });
 
     y({
         url:'/Cake.VsCode/Cake.VsCode/api/Cake.VsCode/VsceToolResolver',
         title:"VsceToolResolver",
-        description:""
-    });
-
-    y({
-        url:'/Cake.VsCode/Cake.VsCode/api/Cake.VsCode/VsceTool_1',
-        title:"VsceTool<TSettings>",
         description:""
     });
 
