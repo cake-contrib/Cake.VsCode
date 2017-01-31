@@ -1,7 +1,0 @@
-site_name: Cake.VsCode
-theme: readthedocs
-repo_url: https://github.com/gep13/Cake.VsCode
-
-pages:
-- Home: index.md
-- Usage: usage.md
