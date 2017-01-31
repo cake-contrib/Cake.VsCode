@@ -34,16 +34,16 @@ var searchModule = function() {
 
     a({
         id:0,
-        title:"VscePublishSettings",
-        content:"VscePublishSettings",
+        title:"VsceToolResolver",
+        content:"VsceToolResolver",
         description:'',
         tags:''
     });
 
     a({
         id:1,
-        title:"IVsceToolResolver",
-        content:"IVsceToolResolver",
+        title:"VsceTool",
+        content:"VsceTool",
         description:'',
         tags:''
     });
@@ -58,22 +58,14 @@ var searchModule = function() {
 
     a({
         id:3,
-        title:"VsceAliases",
-        content:"VsceAliases",
+        title:"VscePublishSettings",
+        content:"VscePublishSettings",
         description:'',
         tags:''
     });
 
     a({
         id:4,
-        title:"VscePublisher",
-        content:"VscePublisher",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:5,
         title:"VscePackageSettings",
         content:"VscePackageSettings",
         description:'',
@@ -81,19 +73,45 @@ var searchModule = function() {
     });
 
     a({
+        id:5,
+        title:"VsceAliases",
+        content:"VsceAliases",
+        description:'',
+        tags:''
+    });
+
+    a({
         id:6,
-        title:"VsceTool",
-        content:"VsceTool",
+        title:"VscePublisher",
+        content:"VscePublisher",
         description:'',
         tags:''
     });
 
     a({
         id:7,
-        title:"VsceToolResolver",
-        content:"VsceToolResolver",
+        title:"IVsceToolResolver",
+        content:"IVsceToolResolver",
         description:'',
         tags:''
+    });
+
+    y({
+        url:'/Cake.VsCode/Cake.VsCode/api/Cake.VsCode/VsceToolResolver',
+        title:"VsceToolResolver",
+        description:""
+    });
+
+    y({
+        url:'/Cake.VsCode/Cake.VsCode/api/Cake.VsCode/VsceTool_1',
+        title:"VsceTool<TSettings>",
+        description:""
+    });
+
+    y({
+        url:'/Cake.VsCode/Cake.VsCode/api/Cake.VsCode/VscePackager',
+        title:"VscePackager",
+        description:""
     });
 
     y({
@@ -103,14 +121,8 @@ var searchModule = function() {
     });
 
     y({
-        url:'/Cake.VsCode/Cake.VsCode/api/Cake.VsCode/IVsceToolResolver',
-        title:"IVsceToolResolver",
-        description:""
-    });
-
-    y({
-        url:'/Cake.VsCode/Cake.VsCode/api/Cake.VsCode/VscePackager',
-        title:"VscePackager",
+        url:'/Cake.VsCode/Cake.VsCode/api/Cake.VsCode/VscePackageSettings',
+        title:"VscePackageSettings",
         description:""
     });
 
@@ -127,20 +139,8 @@ var searchModule = function() {
     });
 
     y({
-        url:'/Cake.VsCode/Cake.VsCode/api/Cake.VsCode/VscePackageSettings',
-        title:"VscePackageSettings",
-        description:""
-    });
-
-    y({
-        url:'/Cake.VsCode/Cake.VsCode/api/Cake.VsCode/VsceTool_1',
-        title:"VsceTool<TSettings>",
-        description:""
-    });
-
-    y({
-        url:'/Cake.VsCode/Cake.VsCode/api/Cake.VsCode/VsceToolResolver',
-        title:"VsceToolResolver",
+        url:'/Cake.VsCode/Cake.VsCode/api/Cake.VsCode/IVsceToolResolver',
+        title:"IVsceToolResolver",
         description:""
     });
 
