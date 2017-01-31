@@ -31,4 +31,4 @@ notifications:
 #---------------------------------#
 cache:
 - Source\packages -> Source\**\packages.config
-- Tools -> build.ps1
+- tools -> setup.cake
