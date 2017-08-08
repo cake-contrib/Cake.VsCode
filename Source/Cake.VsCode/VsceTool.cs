@@ -44,7 +44,7 @@ namespace Cake.VsCode
         /// <returns>The tool executable name.</returns>
         protected sealed override IEnumerable<string> GetToolExecutableNames()
         {
-            return new[] { "vsce.cmd" };
+            return new[] { "vsce.cmd", "vsce" };
         }
 
         /// <summary>
