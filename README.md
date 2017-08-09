@@ -6,7 +6,7 @@ Cake Addin that extends Cake with ability to execute vsce command line utility
 
 ## Information
 
-||Stable|Pre-release|
+| |Stable|Pre-release|
 |:--:|:--:|:--:|
 |GitHub Release|-|[![GitHub release](https://img.shields.io/github/release/cake-contrib/Cake.VsCode.svg)](https://github.com/cake-contrib/Cake.VsCode/releases/latest)|
 |NuGet|[![NuGet](https://img.shields.io/nuget/v/Cake.VsCode.svg)](https://www.nuget.org/packages/Cake.VsCode)|[![NuGet](https://img.shields.io/nuget/vpre/Cake.VsCode.svg)](https://www.nuget.org/packages/Cake.VsCode)|
