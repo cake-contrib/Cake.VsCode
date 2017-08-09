@@ -34,24 +34,24 @@ var searchModule = function() {
 
     a({
         id:0,
-        title:"IVsceToolResolver",
-        content:"IVsceToolResolver",
+        title:"VscePublishSettings",
+        content:"VscePublishSettings",
         description:'',
         tags:''
     });
 
     a({
         id:1,
-        title:"VscePackageSettings",
-        content:"VscePackageSettings",
+        title:"VscePackager",
+        content:"VscePackager",
         description:'',
         tags:''
     });
 
     a({
         id:2,
-        title:"VscePackager",
-        content:"VscePackager",
+        title:"IVsceToolResolver",
+        content:"IVsceToolResolver",
         description:'',
         tags:''
     });
@@ -66,8 +66,8 @@ var searchModule = function() {
 
     a({
         id:4,
-        title:"VscePublishSettings",
-        content:"VscePublishSettings",
+        title:"VscePackageSettings",
+        content:"VscePackageSettings",
         description:'',
         tags:''
     });
@@ -97,14 +97,8 @@ var searchModule = function() {
     });
 
     y({
-        url:'/Cake.VsCode/Cake.VsCode/api/Cake.VsCode/IVsceToolResolver',
-        title:"IVsceToolResolver",
-        description:""
-    });
-
-    y({
-        url:'/Cake.VsCode/Cake.VsCode/api/Cake.VsCode/VscePackageSettings',
-        title:"VscePackageSettings",
+        url:'/Cake.VsCode/Cake.VsCode/api/Cake.VsCode/VscePublishSettings',
+        title:"VscePublishSettings",
         description:""
     });
 
@@ -115,14 +109,20 @@ var searchModule = function() {
     });
 
     y({
+        url:'/Cake.VsCode/Cake.VsCode/api/Cake.VsCode/IVsceToolResolver',
+        title:"IVsceToolResolver",
+        description:""
+    });
+
+    y({
         url:'/Cake.VsCode/Cake.VsCode/api/Cake.VsCode/VscePublisher',
         title:"VscePublisher",
         description:""
     });
 
     y({
-        url:'/Cake.VsCode/Cake.VsCode/api/Cake.VsCode/VscePublishSettings',
-        title:"VscePublishSettings",
+        url:'/Cake.VsCode/Cake.VsCode/api/Cake.VsCode/VscePackageSettings',
+        title:"VscePackageSettings",
         description:""
     });
 
