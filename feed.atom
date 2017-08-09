@@ -2,9 +2,9 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<link rel="self" href="http://cake-contrib.github.io/Cake.VsCode" />
 	<id>http://cake-contrib.github.io/Cake.VsCode</id>
-	<title />
+	<title>Cake.VsCode</title>
 	<rights>2017</rights>
-	<updated>2017-04-15T19:30:34Z</updated>
+	<updated>2017-08-09T06:10:45Z</updated>
 	<entry>
 		<author>
 			<name>gep13</name>
