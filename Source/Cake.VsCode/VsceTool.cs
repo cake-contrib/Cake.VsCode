@@ -13,8 +13,6 @@ namespace Cake.VsCode
     public abstract class VsceTool<TSettings> : Tool<TSettings>
         where TSettings : ToolSettings
     {
-        private readonly IVsceToolResolver _resolver;
-
         /// <summary>
         /// Initializes a new instance of the <see cref="VsceTool{TSettings}"/> class.
         /// </summary>
@@ -22,11 +20,9 @@ namespace Cake.VsCode
         /// <param name="environment">The environment.</param>
         /// <param name="processRunner">The process runner.</param>
         /// <param name="toolLocator">The Tool Locator.</param>
-        /// <param name="resolver">The Chocolatey tool resolver.</param>
-        protected VsceTool(IFileSystem fileSystem, ICakeEnvironment environment, IProcessRunner processRunner, IToolLocator toolLocator, IVsceToolResolver resolver)
+        protected VsceTool(IFileSystem fileSystem, ICakeEnvironment environment, IProcessRunner processRunner, IToolLocator toolLocator)
             : base(fileSystem, environment, processRunner, toolLocator)
         {
-            _resolver = resolver;
         }
 
         /// <summary>
@@ -45,22 +41,6 @@ namespace Cake.VsCode
         protected sealed override IEnumerable<string> GetToolExecutableNames()
         {
             return new[] { "vsce.cmd", "vsce" };
-        }
-
-        /// <summary>
-        /// Gets alternative file paths which the tool may exist in
-        /// </summary>
-        /// <param name="settings">The settings.</param>
-        /// <returns>The default tool path.</returns>
-        protected sealed override IEnumerable<FilePath> GetAlternativeToolPaths(TSettings settings)
-        {
-            var path = _resolver.ResolvePath();
-            if (path != null)
-            {
-                return new[] { path };
-            }
-
-            return Enumerable.Empty<FilePath>();
         }
     }
 }
