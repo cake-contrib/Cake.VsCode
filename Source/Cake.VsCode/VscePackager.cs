@@ -19,9 +19,8 @@ namespace Cake.VsCode
         /// <param name="environment">The environment.</param>
         /// <param name="processRunner">The process runner.</param>
         /// <param name="toolLocator">The tool locator.</param>
-        /// <param name="resolver">The tool resolver</param>
-        public VscePackager(IFileSystem fileSystem, ICakeEnvironment environment, IProcessRunner processRunner, IToolLocator toolLocator, IVsceToolResolver resolver)
-            : base(fileSystem, environment, processRunner, toolLocator, resolver)
+        public VscePackager(IFileSystem fileSystem, ICakeEnvironment environment, IProcessRunner processRunner, IToolLocator toolLocator)
+            : base(fileSystem, environment, processRunner, toolLocator)
         {
             _environment = environment;
         }

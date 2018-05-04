@@ -15,8 +15,10 @@
     <tags>Cake, Script, Build, VsCode</tags>
   </metadata>
   <files>
-    <file src="Cake.VsCode.dll" target="lib\net45" />
-    <file src="Cake.VsCode.pdb" target="lib\net45" />
-    <file src="Cake.VsCode.xml" target="lib\net45" />
+    <file src="net46\Cake.VsCode.dll" target="lib\net46" />
+    <file src="net46\Cake.VsCode.pdb" target="lib\net46" />
+    <file src="net46\Cake.VsCode.xml" target="lib\net46" />
+    <file src="netstandard2.0\Cake.Tfx.dll" target="lib/netstandard2.0" />
+    <file src="netstandard2.0\Cake.Tfx.pdb" target="lib/netstandard2.0" />
   </files>
 </package>

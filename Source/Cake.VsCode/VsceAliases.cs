@@ -55,8 +55,7 @@ namespace Cake.VsCode
                 throw new ArgumentNullException("context");
             }
 
-            var resolver = new VsceToolResolver(context.FileSystem, context.Environment);
-            var packager = new VscePackager(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools, resolver);
+            var packager = new VscePackager(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools);
             packager.Run(settings);
         }
 
@@ -98,8 +97,7 @@ namespace Cake.VsCode
                 throw new ArgumentNullException("context");
             }
 
-            var resolver = new VsceToolResolver(context.FileSystem, context.Environment);
-            var publisher = new VscePublisher(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools, resolver);
+            var publisher = new VscePublisher(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools);
             publisher.Run(settings);
         }
     }
