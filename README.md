@@ -2,7 +2,7 @@
 
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://cake-contrib.mit-license.org)
 
-Cake Addin that extends Cake with ability to execute vsce command line utility
+Cake Addin that extends Cake with ability to execute vsce command line utility.
 
 ## Information
 
@@ -26,6 +26,7 @@ Cake Addin that extends Cake with ability to execute vsce command line utility
 - [Documentation](https://cake-contrib.github.io/Cake.VsCode/)
 
 ## Chat Room
-Come join in the conversation about Cake.VsCode in our Gitter Chat Room
+
+Come join in the conversation about Cake.VsCode in our Gitter Chat Room.
 
 [![Join the chat at https://gitter.im/cake-contrib/Lobby](https://badges.gitter.im/cake-contrib/Lobby.svg)](https://gitter.im/cake-contrib/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
